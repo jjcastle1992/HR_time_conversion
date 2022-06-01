@@ -42,6 +42,10 @@ string timeConversion(string s) {
     string militaryHours = "";
     militaryHours = to_string (hours);
 
+    if (militaryHours == "0") {
+        militaryHours = "00";
+    }
+
     for (int i = 0; i < 8; i ++) {
         if (i < 2) {
             militaryTime.push_back(militaryHours[i]);
