@@ -44,10 +44,10 @@ string timeConversion(string s) {
 
     for (int i = 0; i < 8; i ++) {
         if (i < 2) {
-            militaryTime [i] = militaryHours [i];
+            militaryTime.push_back(militaryHours[i]);
         }
         else {
-            militaryTime [i] = s[i];
+            militaryTime.push_back(s[i]);
         }
     }
     return militaryTime;
