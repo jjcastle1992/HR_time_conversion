@@ -40,10 +40,17 @@ string timeConversion(string s) {
 
     //Convert hours back to string and incorporate these revised hours into militaryTime string, truncating meridiem.
     string militaryHours = "";
+    bool hourFix = false;
+    if (hours >= 0 && hours <= 9 ) {
+        hourFix = true;
+    }
     militaryHours = to_string (hours);
 
-    if (militaryHours == "0") {
-        militaryHours = "00";
+    if (hourFix) {
+        string tempHour = "";
+        tempHour = militaryHours;
+        militaryHours = "0";
+        militaryHours.push_back(tempHour[0]);
     }
 
     for (int i = 0; i < 8; i ++) {
