@@ -10,6 +10,16 @@ using namespace std;
  */
 
 string timeConversion(string s) {
+//Capture first two characters of string as hh
+
+//capture last to characters of string as meridiem
+
+//convert hh to int
+
+//if AM is last two characters and hh != 12 do nothing. If hh == 12, then subtract 12 from hh
+
+//if PM is last two characters and hh != 12, add 12 to hh. IF hh == 12, then do nothing
+
 
 }
 
